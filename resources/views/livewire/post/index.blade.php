@@ -1,8 +1,7 @@
 <div>
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.js"></script>
     @foreach($posts as $post)
     <div class="pt-4 sm:pt-6 w-full" wire:key="{{$post->id}}">
-        <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.js"></script>
-
         <div
             x-data="{
                 skip: 3,
@@ -115,7 +114,7 @@
         </div>
     </div>
     @endforeach
-    
+
     <div class="mt-5">
         {{ $posts->links() }}
     </div>
