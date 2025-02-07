@@ -29,6 +29,7 @@ class PostResource extends Resource
             ->schema([
                 FileUpload::make('images')
                     ->multiple()
+                    ->directory('images')
                     ->columnSpanFull()
             ]);
     }
