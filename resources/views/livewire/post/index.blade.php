@@ -63,10 +63,10 @@
                     tabindex="0"
                     role="listbox"
                     aria-labelledby="carousel-content-label"
-                    class="flex w-full snap-x snap-mandatory overflow-x-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]"
+                    class="flex w-full snap-x snap-mandatory overflow-x-hidden h-[400px]"
                 >
                     @foreach($post->images as $index => $image)
-                    <li x-bind="disableNextAndPreviousButtons" class="flex w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] shrink-0 snap-start" role="option">
+                    <li x-bind="disableNextAndPreviousButtons" class="flex w-full h-[400px] shrink-0 snap-start" role="option">
                         <div class="w-full h-full bg-gray-200">
                             <img class="w-full h-full object-cover rounded-md" loading="lazy" src="{{ asset('storage/'.$image) }}" alt="Post image {{ $index + 1 }}">
                         </div>

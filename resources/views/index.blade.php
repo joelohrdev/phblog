@@ -15,7 +15,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <div class="my-5 w-full max-w-4xl mx-auto px-3">
+    <div class="my-5 w-full max-w-2xl mx-auto px-3">
         <livewire:post.index />
     </div>
 </body>
